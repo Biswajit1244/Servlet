@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Shopping | Products</title>
+    </head>
+    <style>
+        h2{
+            text-align: center;
+            font-size: 40px;
+            color: crimson;
+            background-color: rgb(221, 186, 29);
+        }
+        .main{
+            position: ;
+            padding: 50px;
+            width: 400px;
+            background-color: blanchedalmond;
+            text-align: left;
+
+        }
+        .sub{
+            padding: 10px;
+            margin: 5px auto;
+        }
+        form{
+            margin: 35px auto;
+            width: 400px;
+            color: cadetblue;
+        }
+        label{
+            text-align: left;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+        }
+        input{
+            padding: 8px;
+            font-size: 10px;
+        }
+
+    </style>
+    <body>
+        <h2>Shopping</h2>
+        <div class="main">
+        <form action="orderurl" method="POST">
+           <div class="sub">
+               <label>Name</label>
+               <input type="text" name="ename" placeholder="Enter name"/>
+           </div>
+           <div class="sub">
+               <label>Products</label>
+                   <select name="prod">
+                       <option value="item">--select item--</option>
+                       <option value="tv">TV</option>
+                       <option value="mobile">Mobile</option>
+                       <option value="laptop">Laptop</option>
+                       <option value="grinder">Grainder</option>
+                       <option value="fridge">Fridge</option>
+                       <option value="fan">Fan</option>
+                       <option value="washing machine">Washing Machine</option>
+                   </select>
+           </div>
+           <div class="sub">
+               <label>Quantity</label>
+              <input type="number" name="equantity" placeholder="Enter no of items..">
+           </div>
+           <div class="sub">
+               <label>Price</label>
+               <input type="number" name="eprice">
+           </div>
+           <div>
+               <input type="submit" value="Order">
+           </div>
+        </form>
+        </div>
+    </body>
+</html>
